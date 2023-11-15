@@ -1,11 +1,15 @@
 function minDate(dates) {
   //write you code here
+	dates.sort((a,b) => {
+		return new Date(a) - new Date(b);
+	});
+	return dates[0];
 }
 
 // Do not change the code
 
 var dates = [
-  "2023/03/01",
+  "2023/03/01",	
   "2023/03/02",
   "2023/03/03",
   "2023/03/04",
